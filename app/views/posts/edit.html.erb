@@ -1,0 +1,30 @@
+<h1>Editer l'article</h1>
+
+ <%= form_for @post do |f| %>
+
+<div class="form-group">
+
+    <label for="title">Titre de l'article</label>
+
+    <%= f.text_field :title %>
+</div>
+
+<div class="form-group">
+
+    <label for="content">Contenu de l'article</label>
+
+    <%= f.text_area :content %>
+</div>
+
+<div class="form-group">
+
+    <label for="author">Auteur de l'articl</label>
+
+    <%= f.text_field :author %>
+</div>
+
+<div class="form-group">
+<button type ="submit" class="bg-blue-800">Modifier</button>
+</div>
+
+ <% end%>
